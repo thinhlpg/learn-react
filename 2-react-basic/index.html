@@ -27,15 +27,18 @@
 
             const title = 'Welcome to my website'
             const subtitle = 'this is a website for learning react'
-            const address = 'https://www.facebook.com/lpgthinh'
+
+            // const handleClick = (event) => {
+            //     console.log('You licked me')
+            //     console.log('Hentai')
+            //     console.log(event)
+            // }
 
             return (
                 <div className="banner">
-                    <h2>{title.toUpperCase()}</h2> {/*Put your variables inside a curly braces to render their dymamic values.*/}
+                    <h2>{title.toUpperCase()}</h2>
                     <p>{subtitle}</p>
-                    <p>Today's date is: {new Date().toDateString()}</p>
-                    <p>Random number: {Math.random() * 100}</p>
-                    <a href={address}>Visit my Facebook</a>
+                    <button onClick={(event) => console.log(event)}>Lick me</button>
                 </div>
             )
         }
